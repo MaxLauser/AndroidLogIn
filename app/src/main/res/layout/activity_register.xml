@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page"
+    tools:context="com.example.log_in_register.android_login_register.Register">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/reg_FirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <EditText
+                android:textColor="@color/colorAccent"
+                android:id="@+id/reg_LastName"
+                android:hint="Last Name"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <EditText
+                android:textColor="@color/colorAccent"
+                android:id="@+id/reg_UserName"
+                android:hint="User Name"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <EditText
+                android:textColor="@color/colorAccent"
+                android:id="@+id/reg_PhoneNumber"
+                android:hint="PhoneNumber"
+                android:inputType="textPhonetic"
+                android:textStyle="bold"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <EditText
+                android:textColor="@color/colorAccent"
+                android:id="@+id/reg_Email"
+                android:hint="Email"
+                android:textStyle="bold"
+                android:inputType="textEmailAddress"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <EditText
+                android:textColor="@color/colorAccent"
+                android:id="@+id/reg_Password"
+                android:hint="Password"
+                android:textStyle="bold"
+                android:inputType="textPassword"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <EditText
+                android:textColor="@color/colorAccent"
+                android:id="@+id/reg_ConfirmPassword"
+                android:hint="Confirm Password"
+                android:textStyle="bold"
+                android:inputType="textPassword"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <Button
+                android:id="@+id/reg_Register"
+                android:text="Register"
+                android:textStyle="bold"
+                android:theme="@style/MyButton"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <Button
+                android:id="@+id/reg_LogIn"
+                android:text="Log in an Existed account"
+                android:theme="@style/MyButton"
+                android:textStyle="bold"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>
